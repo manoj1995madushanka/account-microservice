@@ -20,10 +20,13 @@ import java.util.Map;
 
 /**
  * If any controller exception happened will reach to this class
- * */
+ */
 @ControllerAdvice
-public class GlobalExceptionHandler  extends ResponseEntityExceptionHandler {
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
+    /***
+     * This override method is need to handle validation related errors
+     * */
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
@@ -64,7 +67,7 @@ public class GlobalExceptionHandler  extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(CustomerAlreadyExistException.class)
     public ResponseEntity<ErrorResponseDto> handleCustomerAlreadyExistsException(CustomerAlreadyExistException exception,
-                                                                                 WebRequest webRequest){
+                                                                                 WebRequest webRequest) {
         ErrorResponseDto errorResponseDTO = new ErrorResponseDto(
                 webRequest.getDescription(false),
                 HttpStatus.BAD_REQUEST,
