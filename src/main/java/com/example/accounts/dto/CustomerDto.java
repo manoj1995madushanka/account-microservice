@@ -14,14 +14,14 @@ import lombok.Data;
 )
 public class CustomerDto {
     @Schema(
-            description = "Name of the customer", example = "Eazy Bytes"
+            description = "Name of the customer", example = "Mano Madushanka"
     )
     @NotEmpty(message = "Name can not be null or empty")
     @Size(min = 5, max = 30, message = "name length should between 5 and 30")
     private String name;
 
     @Schema(
-            description = "Email address of the customer", example = "tutor@eazybytes.com"
+            description = "Email address of the customer", example = "tutor@test.com"
     )
     @NotEmpty(message = "Email address can not be null or empty")
     @Email(message = "Email address is not valid")
