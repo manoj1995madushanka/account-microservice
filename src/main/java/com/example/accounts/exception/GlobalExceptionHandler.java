@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * If any controller exception happened will reach to this class
  */
-@ControllerAdvice
+@ControllerAdvice // also we can use @RestControllerAdvice that is combination of @ControllerAdvice and @ResponseBody
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     /***

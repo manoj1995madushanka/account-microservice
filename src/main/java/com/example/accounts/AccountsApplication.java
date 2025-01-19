@@ -10,6 +10,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
+// Below annotation needed if that project does not follow standard packaging structure
+/*
+ * @ComponentScans({@ComponentScan("package"})
+ * @EnableJpaRepositories("package")
+ * @EntityScan("package")
+ * */
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
         info = @Info(
