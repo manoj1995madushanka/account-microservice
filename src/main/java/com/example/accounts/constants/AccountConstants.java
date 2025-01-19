@@ -13,5 +13,7 @@ public class AccountConstants {
     public static final String MESSAGE_201 = "Account Created";
     public static final String MESSAGE_200 = "Request Succeed";
     public static final String STATUS_500 = "500";
+    public static final String STATUS_417 = "417";
     public static final String MESSAGE_500 = "An error occurred.";
+    public static final String MESSAGE_417 = "Operation failed.";
 }
