@@ -10,7 +10,7 @@ http://localhost:8080/swagger-ui/index.html#
 http://localhost:8080/h2-console
 ```
 
-###### course URL : github.com/easybites/microservices
+###### course URL : https://github.com/eazybytes/microservices
 
 ### Ways to create docker image
 

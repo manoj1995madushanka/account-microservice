@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to simple bank accounts related PROD APIs"
+  contactDetails:
+    name: "Manoj PROD"
+    email: "madushankamanoj414_prod@gmail.com"
+    onCallSupport: 0715147270

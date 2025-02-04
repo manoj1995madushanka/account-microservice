@@ -14,3 +14,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to simple bank accounts related APIs"
+  contactDetails:
+    name: "Manoj"
+    email: "madushankamanoj414@gmail.com"
+    onCallSupport: 0715147270
+
