@@ -27,3 +27,7 @@ http://localhost:8080/h2-console
 ###### Jib is a open-source java tool maintained by google for build docker images of Java applications.
 
 ###### We do not need to write dockerfile
+
+
+###### docker build . -t accounts-service
+###### docker run -d -p 8080:8080 [imageName]
