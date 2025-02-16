@@ -33,4 +33,7 @@ http://localhost:8080/h2-console
 ###### docker run -d -p 8080:8080 [imageName]
 
 ###### docker compose up
-###### docker compose down
+#### To stop and remove all containers created by compose up command
+###### docker compose down 
+#### To only stop container
+##### docker compose stop
