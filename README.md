@@ -31,3 +31,6 @@ http://localhost:8080/h2-console
 
 ###### docker build . -t accounts-service
 ###### docker run -d -p 8080:8080 [imageName]
+
+###### docker compose up
+###### docker compose down

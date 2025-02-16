@@ -33,5 +33,5 @@ services:
     networks:
       - eazybank
 networks:
-  easybank:
+  eazybank:
     driver: "bridge"
