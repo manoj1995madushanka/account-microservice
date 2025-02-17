@@ -36,4 +36,4 @@ http://localhost:8080/h2-console
 #### To stop and remove all containers created by compose up command
 ###### docker compose down 
 #### To only stop container
-##### docker compose stop
+##### docker compose start/stop
