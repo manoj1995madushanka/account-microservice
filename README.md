@@ -37,3 +37,15 @@ http://localhost:8080/h2-console
 ###### docker compose down 
 #### To only stop container
 ##### docker compose start/stop
+
+## How to externalize configurations using command line arguments - highest presidents
+#### java -jar account-service.jar --build.version="1.1"
+
+
+## How to externalize configurations using JVM system properties
+#### java -Dbuild.version="1.2" -jar account-service.jar
+
+
+## How to externalize configurations using environment variables
+#### Windows -> env:BUILD_VERSION="1.3"; java -jar account-service.jar
+#### Linux -> BUILD_VERSION="1.3" java -jar account-service.jar
