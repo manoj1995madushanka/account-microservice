@@ -35,6 +35,7 @@ public class AccountsController {
     @Value("${build.version}")
     private String buildVersion;
 
+    // To read configs from environment interface
     @Autowired
     private Environment environment;
 

@@ -26,10 +26,13 @@ spring:
 build:
   version: "1.0"
 
+# Adding to demonstrate property reads using @configurationProperties
 accounts:
   message: "Welcome to simple bank accounts related APIs Manoj"
   contactDetails:
     name: "Manoj"
     email: "madushankamanoj414@gmail.com"
-    onCallSupport: 0715147270
+  onCallSupport:
+    - 0715147270
+    - 0784391509
 
