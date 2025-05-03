@@ -1,6 +1,10 @@
 server:
   port: 8080
 spring:
+  application:
+    name: "accounts"
+  profiles:
+    active: "prod"
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
@@ -14,25 +18,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-#  config:
-#    import:
-#      - "application_qa.yml"
-#      - "application_prod.yml"
-#  profiles:
-#    active:
-#      - "qa"
-
-
-build:
-  version: "1.0"
-
-# Adding to demonstrate property reads using @configurationProperties
-accounts:
-  message: "Welcome to simple bank accounts related APIs Manoj"
-  contactDetails:
-    name: "Manoj"
-    email: "madushankamanoj414@gmail.com"
-  onCallSupport:
-    - 0715147270
-    - 0784391509
+  config:
+    import: "optional:configserver:http://localhost:8071/"
 
